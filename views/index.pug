@@ -2,6 +2,6 @@ extends ./layout.pug
 
 block body
     div.welcome
-        img(src=pagecontent.getImage('page.image').url, class='star')
+        img(src=pagecontent.getImage('page.image').url, class='logo')
         != pagecontent.getStructuredText('page.title').asHtml(ctx.linkResolver)
         != pagecontent.getStructuredText('page.description').asHtml(ctx.linkResolver)

@@ -34,7 +34,7 @@ app.listen(PORT, function() {
 
 app.route('/').get(function(req, res) {
   api(req, res).then(function(api) {
-    return api.getByUID('page', 'get-started');
+    return api.getByUID('page', 'the-coding-smith');
   }).then(function(prismicdoc) {
     res.render('index', {
       pagecontent: prismicdoc
